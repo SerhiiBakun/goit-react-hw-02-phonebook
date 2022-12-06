@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { Button, Field, Form, Input } from './ContactForm.styled';
-import PropTypes from 'prop-types';
 
 export class ContactForm extends Component {
   static propTypes = {
