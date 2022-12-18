@@ -6,7 +6,6 @@ export class ContactForm extends Component {
   static propTypes = {
     onSubmit: PropTypes.func,
   };
-  u;
 
   state = {
     name: '',
@@ -16,7 +15,7 @@ export class ContactForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
     const { name, number } = this.state;
-    this.props.onSubmit(name.value, number.value);
+    this.props.onSubmit(name, number);
     this.reset();
   };
 
